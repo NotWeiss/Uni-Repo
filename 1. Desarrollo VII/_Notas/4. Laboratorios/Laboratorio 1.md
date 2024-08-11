@@ -12,3 +12,56 @@ II Semestre<br><br><br>
 <div style= "page-break-after: always;"></div>
 
 # Laboratorio 1. 
+
+```
+<?php
+
+$operacion = [];
+$resultado;
+
+function StringHandler($_val)
+{
+    $operacion = explode(" ", $_val);
+}
+
+function Operator($val)
+{
+    StringHandler($val);
+
+    switch ($operacion[1])
+    {
+        case '+':
+            $resultado= (float)$operacion[0] + (float)$operacion[2];
+            break;
+        default:
+            $resultado= "Coming soon...";
+    }
+    echo $resultado;
+}
+
+?>
+```
+
+```
+<?php
+
+$operacion = [];
+$resultado= 0;
+
+function Operator($val)
+{
+    $operacion = explode(" ", $val);
+
+    switch ($operacion[1])
+    {
+        case '+':
+            $resultado= (float)$operacion[0] + (float)$operacion[2];
+            break;
+        default:
+            $resultado= "Coming soon...";
+    }
+    echo $resultado;
+}
+
+?>
+```
