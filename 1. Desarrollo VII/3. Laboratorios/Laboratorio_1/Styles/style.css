@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.background
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(21,13,0,0.1), rgba(21,13,0,0.9)),
+     url(../Assets/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.main-box
+{
+    background: linear-gradient(rgb(233, 222, 188), rgb(231, 201, 161));
+    width: 20%;
+    height: 50%;
+    margin: 10% auto;
+    position: relative;
+    border-radius: 10px;
+    padding: 7px;
+    border: solid rgb(231, 201, 161) 1px;
+
+}
+
+.switch-function
+{
+    width: 50%;
+    margin: 5% auto;
+    position: relative;
+    border-radius: 25px;
+}

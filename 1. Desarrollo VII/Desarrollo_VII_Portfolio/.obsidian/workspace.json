@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "18301207e3a2b1ef",
+    "type": "split",
+    "children": [
+      {
+        "id": "e9eef3c4fa1069b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ad3fed0c00bca2c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a723eb964e1b81c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8c3643fbec71426",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c505080e6ffdf71",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c3d6c91ee92ad9c3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f30032846d67c720",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a9d5bf7e0ebd7067",
+    "type": "split",
+    "children": [
+      {
+        "id": "018d36590b180ba1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1aa5814228a8219",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d297300ed365a8d6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "327080965f02eda4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "930c8cff8a6cdd25",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled.md"
+              }
+            }
+          },
+          {
+            "id": "314880e73718bf3e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "ad3fed0c00bca2c9",
+  "lastOpenFiles": [
+    "6. Extra/EXCEL.md",
+    "Untitled.md",
+    "1. Clases/Clase 1.md",
+    "4. Laboratorios/Laboratorio 1.md",
+    "Demencia de Ian.md",
+    "2. Practicas/Practica 1.md",
+    "6. Extra/Formatting Cheat Sheet.md",
+    "6. Extra/Presentacion.md",
+    "6. Extra/ModsMinecraft.md",
+    "2. Practicas/Attachments/Calculadora SimplePot-1.png",
+    "2. Practicas/Attachments/Calculadora SimpleMod-1.png",
+    "2. Practicas/Attachments/Calculadora SimpleDiv-1.png",
+    "2. Practicas/Attachments/Calculadora Simple--1.png",
+    "2. Practicas/Attachments/Calculadora Simple+-1.png",
+    "2. Practicas/Attachments/Calculadora SimpleX-1.png",
+    "2. Practicas/Attachments/1phpInfo.png",
+    "2. Practicas/Attachments/2HelloWorld.png",
+    "2. Practicas/Attachments",
+    "6. Extra/Attachments/fisc logo.png",
+    "6. Extra/Attachments/utp logo.png",
+    "6. Extra/Attachments",
+    "Practica 1.pdf",
+    "Indice.pdf",
+    "6. Extra",
+    "New folder",
+    "5. Parciales",
+    "4. Laboratorios",
+    "3. Talleres",
+    "1. Clases"
+  ]
+}

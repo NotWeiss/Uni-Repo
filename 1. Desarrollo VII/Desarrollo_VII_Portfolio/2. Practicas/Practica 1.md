@@ -18,7 +18,6 @@ II Semestre<br><br><br>
 1. **Instalar y Configurar Servidor Web Local:** Desmarcar las aplicaciones no deseadas durante la instalación y organizar las carpetas a manejar.
 2. **Verificar Instalación de PHP:** Escribir **`phpinfo();`** en mi editor de texto preferido.
 3. **Ejecutar:** Iniciar ***Apache Server*** via **XAMPP** y ejecutar lo anterior.
-
 **CÓDIGO:**
 ```
 <?php
