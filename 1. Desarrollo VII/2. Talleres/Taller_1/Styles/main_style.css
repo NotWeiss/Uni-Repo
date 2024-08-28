@@ -1,0 +1,147 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.background
+{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 2, 139, 0.1), rgba(13, 5, 88, 0.5)), url(../Assets/Main-Background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.content
+{
+    position: relative;
+    z-index: 1;
+}
+
+nav
+{
+    display: flex;
+    background-color: white;
+    width: 80%;
+    min-height: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    
+}
+
+main
+{
+    font-family: 'Inter', sans-serif;
+}
+
+.home h1
+{
+    font-size: 2.5rem;
+    vertical-align: middle;
+    text-align: center;
+    color: rgb(35, 11, 141);
+}
+
+.paragraph
+{
+    padding: 5rem;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.button-frame
+{
+    margin-top: 0.5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+}
+
+.button
+{
+    display: block;
+    margin: 1rem;
+    padding: 1.3rem;
+    background-color: rgb(255, 151, 137);
+    min-width: 12rem;
+    min-height: 40%;
+    text-align: center;
+    border-radius: 2rem;
+    align-items: center;
+
+}
+
+.button h3
+{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgb(34, 13, 92);
+}
+
+.button p
+{
+    font-size: 1rem;
+    margin-top: 8px;
+    color: rgb(34, 13, 92);
+}
+
+footer
+{
+    height: 12%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-image: linear-gradient(rgba(214, 221, 255, 1), rgba(0, 2, 139, 0.05));
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    display: flex;
+    justify-content: left;
+
+    font-family: 'Inter', sans-serif;
+}
+
+footer p
+{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+
+@media (min-width: 800px) 
+{
+    .button-frame { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) 
+{
+    .button-frame { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1600px) 
+{
+    .button-frame { grid-template-columns: repeat(4, 1fr); }
+}
