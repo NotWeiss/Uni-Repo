@@ -20,6 +20,7 @@ function Order($value1, $value2)
         $order[1] = $_value2;
     }
 
+
     return $order;
 
 }
@@ -52,7 +53,7 @@ function Average($data)
         
 
     // Retorna una cadena con ambos resultados
-    return $result = "Resultado del Metodo #1: $method1 <br> Resultado del Metodo #2: $method2";
+    return $result = "Metodo #1: $method1 <br>Metodo #2: $method2";
 
 }
 
@@ -113,12 +114,14 @@ function RangeSum($value1, $value2)
     $origin = $order[0];
     $finality = $order[1];
 
+
     // Metodo #1.
     // Formula para calcular la suma de numeros consecutivos dentro del rango [a-n].
-    $method1 = ($finality * ($finality + 1) - $origin ($origin - 1)) / 2;
+    $method1 = ($finality * ($finality + 1) - $origin * ($origin - 1)) / 2;
 
     // Metodo #2.
     // Ciclo FOR desde origen hasta final acumulando todos los numeros dentro de aquel rango.
+    $method2 = 0;
     for ($i = $origin; $i <= $finality; $i++)
         $method2 += $i;
 
@@ -150,6 +153,7 @@ function EvenNumbersSum($value1, $value2)
 
     // Metodo #2.
     // Ciclo
+    $method2 = 0;
     for ($i = $origin; $i <= $finality; $i += 2)
         $method2 += $i;
 
@@ -181,6 +185,7 @@ function OddNumbersSum($value1, $value2)
 
     // Metodo #2.
     // Ciclo
+    $method2 = 0;
     for ($i = $origin; $i <= $finality; $i += 2)
         $method2 += $i;
 

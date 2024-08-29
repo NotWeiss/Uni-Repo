@@ -46,21 +46,23 @@
                 <div class = "paragraph">
 
                     <p>
-                        <h4>Calcular la media de los 5 números positivos introducidos.</h4>
+                        <h4>Calcular la suma de los primeros 10 numeros pares.</h4>
                     </p>
 
                 </div>
 
-                <div class = "wrapper">
+                <div class = "wrapperBig">
 
-                    <H2>MEDIA</H2>
+                    <H2>Suma Secuencial de Pares [N-M]</H2>
 
                     <!--Formulario-->
-                    <form action = "problema1.php" method = "POST">
+                    <form action = "problema4.php" method = "POST">
 
-                        <p>Ingrese cada valor separado por un espacio<br></p>
+                        <p>Ingrese el origen y el final del rango a sumar</p>
 
-                        <input type = "text" name = "operacion" placeholder = "Valor1 Valor2 Valor3 ..."/>
+                        <input type = "text" name = "origen" placeholder = "Origen"/>
+
+                        <input type = "text" name = "final" placeholder = "Final"/>
 
                         <button type="submit" name = "calcular">CALCULAR</button>
                         
@@ -71,11 +73,11 @@
                         
                         <p>
                             <?php
-                                if ((empty($_POST["operacion"])) && (isset($_POST["calcular"])))
-                                    echo "<H4 style = 'color:Tomato;'>DEBE INGRESAR DATOS</H4>";
-                                elseif ((isset($_POST["operacion"])) && (isset($_POST["calcular"])))
-                                    echo Average(toArray("$_POST[operacion]"));
-                                //$_POST = array();  
+                                if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
+                                    echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
+                                elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
+                                    echo EvenNumbersSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
+                                //$_POST = array(); 
                             ?>
                         </p>
                         

@@ -37,7 +37,7 @@
                 
                 <div class = "paragraph">
                     <p>
-                        Desarrollo de los problemas del taller #1 de Desarrollo de Software VII.
+                        <h4>Desarrollo de los problemas del taller #1 de Desarrollo de Software VII.</h4>
                     </p>
 
                 </div>
@@ -49,17 +49,17 @@
                         <p>Calcular la media de los 5 números positivos introducidos.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema2.php" class = "button">
                         <H3>PROBLEMA 2<br></H3>
                         <p>Calcular la suma de los números de N a M.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema3.php" class = "button">
                         <H3>PROBLEMA 3<br></H3>
                         <p>Calcular la suma de los N primeros números pares.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema4.php" class = "button">
                         <H3>PROBLEMA 4<br></H3>
                         <p>Calcular independientemente la suma de los numeros pares e impares entre N y M.</p>
                     </a>

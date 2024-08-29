@@ -1,13 +1,8 @@
+/*----------------------------------------------------------GLOBAL---------------------------------------------------------------*/
 *
 {
     margin: 0;
     padding: 0;
-}
-
-body
-{
-    overflow-x: hidden;
-    overflow-y: scroll;
 }
 
 a
@@ -19,7 +14,7 @@ a
 {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 2, 139, 0.1), rgba(13, 5, 88, 0.5)), url(../Assets/Main-Background.jpg);
+    background-image: linear-gradient(rgba(0, 2, 139, 0.4), rgba(13, 5, 88, 0.5)), url(../Assets/Main-Background.jpg);
     background-position: center;
     background-size: cover;
     position: fixed;
@@ -38,8 +33,9 @@ nav
     background-color: white;
     width: 80%;
     min-height: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 50% 50%;
@@ -57,20 +53,31 @@ main
     font-size: 2.5rem;
     vertical-align: middle;
     text-align: center;
-    color: rgb(35, 11, 141);
+    color: rgb(34, 13, 92);
 }
 
 .paragraph
 {
-    padding: 5rem;
+    padding: 4.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
     text-align: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+.paragraph H4
+{
+    font-size: 1.5rem;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------INDEX----------------------------------------------------------------*/
 .button-frame
 {
-    margin-top: 0.5%;
+    margin-top: 1.4%;
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 10%;
@@ -106,17 +113,169 @@ main
     color: rgb(34, 13, 92);
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------WRAPPERS---------------------------------------------------------------*/
+.wrapper
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.wrapper h2
+{
+    margin-top: 10px;
+    color: rgb(34, 13, 92);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.wrapper h4
+{
+    margin-bottom: .5rem;
+}
+
+.wrapper2
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.wrapper2 h2
+{
+    margin-top: 10px;
+    color: rgb(34, 13, 92);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.wrapper2 h4
+{
+    margin-bottom: .5rem;
+}
+
+.wrapperBig
+{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.wrapperBig h2
+{
+    margin-top: 10px;
+    color: rgb(34, 13, 92);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.wrapperBig h4
+{
+    margin-bottom: .5rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+form p
+{
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+form input
+{
+    width: 100%;
+    margin-top: 2rem;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid rgb(107, 57, 223);
+}
+
+form button
+{
+    width: 100%;
+    margin: 1.5rem;
+    height: 50px;
+    background-color: rgb(107, 57, 223);
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    border-color: none;
+    border-width: 0px;
+    border-radius: .5rem;
+}
+
+.resultado
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    margin-bottom: 1.5rem;
+    border-width: 1px;
+    outline: 2px dashed rgb(221, 221, 221);
+}
+
+.resultado p
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    
+}
+
 footer
 {
-    height: 12%;
+    height: 9%;
     margin-left: 15%;
     margin-right: 15%;
-    background-image: linear-gradient(rgba(214, 221, 255, 1), rgba(0, 2, 139, 0.05));
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
+    background-image: linear-gradient(rgba(214, 221, 255, 1), rgba(82, 83, 134, 0.5));
+    border-top-left-radius: 3em 3em;
+    border-top-right-radius: 3em 3em;
     display: flex;
     justify-content: left;
-
     font-family: 'Inter', sans-serif;
 }
 
@@ -134,14 +293,47 @@ footer p
 @media (min-width: 800px) 
 {
     .button-frame { grid-template-columns: repeat(2, 1fr); }
+    .wrapper
+    {
+        width: 300px;
+    }
+
+    .wrapper2
+    {
+        width: 300px;
+    }
+
+    .wrapperBig
+    {
+        width: 500px;
+    }
 }
 
 @media (min-width: 1200px) 
 {
     .button-frame { grid-template-columns: repeat(3, 1fr); }
+    .wrapper
+    {
+        width: 350px;
+    }
+
+    .wrapper2
+    {
+        width: 350px;
+    }
+
+    .wrapperBig
+    {
+        width: 600px;
+    }
 }
 
 @media (min-width: 1600px) 
 {
     .button-frame { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 2000px) 
+{
+    footer { height: 11.5%; }
 }
