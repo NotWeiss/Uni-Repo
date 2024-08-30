@@ -251,8 +251,10 @@ form button
     flex-wrap: wrap;
     align-items: center;
     justify-items: center;
+    text-align: center;
+    vertical-align: middle;
     width: 150px;
-    height: 150px;
+    height: 110px;
     padding: 5px;
     margin-bottom: 1.5rem;
     border-width: 1px;
@@ -261,7 +263,7 @@ form button
 
 .resultado p
 {
-    height: 100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
