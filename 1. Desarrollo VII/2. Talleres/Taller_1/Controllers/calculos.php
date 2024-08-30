@@ -69,10 +69,12 @@ function Multiples($base, $amount)
     $_amount = $amount;
     $count= 1;
 
-    while ($count < $amount)
+    $result= "";
+
+    while ($count <= $amount)
     {
         $preResult= $_base * $count;
-        $result += "$count.) $_base x $count = $preResult<br>";
+        $result .= "$_base x $count = $preResult<br>";
         $count++;
     }
 
@@ -88,16 +90,45 @@ function PowerOf($base, $amount)
     $_amount = $amount;
     $count= 1;
 
-    while ($count < $amount)
+    $result = "";
+
+    while ($count <= $amount)
     {
         $preResult= $_base ** $count;
-        $result += "$count.) $_base ^ $count = $preResult<br>";
+        $result .= "$_base ^ $count = $preResult<br>";
         $count++;
     }
 
     return $result;
 
 }
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function Repeater($answer)
+{
+
+    $_answer = $answer;
+
+    if ($_answer == "no")
+    {
+        echo "Proceso Detenido.";
+        return false;
+    }
+    elseif ($_answer == "si")
+    {
+        echo "El Proceso Continuara.";
+        return true;
+    }
+    else    
+        echo "Respuesta fuera de rango.";
+    
+    return true;
+    
+
+}
+
 
 #endregion
 
@@ -126,7 +157,7 @@ function RangeSum($value1, $value2)
         $method2 += $i;
 
     // Retorna una cadena con ambos resultados
-    return $result = "Resultado del Metodo #1: $method1 <br> Resultado del Metodo #2: $method2";
+    return $result = "Metodo #1: $method1 <br>Metodo #2: $method2";
 
 }
 
@@ -158,7 +189,7 @@ function EvenNumbersSum($value1, $value2)
         $method2 += $i;
 
     // Retorna una cadena con ambos resultados
-    return $result = "Resultado del Metodo #1: $method1 <br> Resultado del Metodo #2: $method2";
+    return $result = "Metodo #1: $method1 <br>Metodo #2: $method2";
 
 }
 
@@ -190,7 +221,7 @@ function OddNumbersSum($value1, $value2)
         $method2 += $i;
 
     // Retorna una cadena con ambos resultados
-    return $result = "Resultado del Metodo #1: $method1 <br> Resultado del Metodo #2: $method2";
+    return $result = "Metodo #1: $method1 <br>Metodo #2: $method2";
 
 }
 
@@ -211,16 +242,17 @@ function SquaredSum($value1, $value2)
     $a = $origin - 1;
     $n = $finality;
 
-    $method1 = ($n * ($n + 1) * (2 * $n + 1)) - ($n * ($n + 1) * (2 * $n + 1)) / 6;
+    $method1 = (($n * ($n + 1) * (2 * $n + 1)) / 6) - (($a * ($a + 1) * (2 * $a + 1)) / 6);
 
     // Metodo #2.
     // Ciclo
+    $method2 = 0;
     for ($i = $origin; $i <= $finality; $i++)
-        $method2 += i ** 2;
+        $method2 += $i ** 2;
 
     // Retorna una cadena con ambos resultados
-    return $result = "Resultado del Metodo #1: $method1 <br> Resultado del Metodo #2: $method2";
-
+    return $result = "Metodo #1: $method1 <br>Metodo #2: $method2";
+  
 }
 
 #endregion

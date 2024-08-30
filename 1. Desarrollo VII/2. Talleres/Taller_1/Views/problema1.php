@@ -71,11 +71,11 @@
                         
                         <p>
                             <?php
+                                // Validacion.
                                 if ((empty($_POST["operacion"])) && (isset($_POST["calcular"])))
                                     echo "<H4 style = 'color:Tomato;'>DEBE INGRESAR DATOS</H4>";
                                 elseif ((isset($_POST["operacion"])) && (isset($_POST["calcular"])))
-                                    echo Average(toArray("$_POST[operacion]"));
-                                //$_POST = array();  
+                                    echo Average(toArray("$_POST[operacion]")); 
                             ?>
                         </p>
                         

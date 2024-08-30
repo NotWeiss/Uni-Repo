@@ -73,11 +73,11 @@
                         
                         <p>
                             <?php
+                                // Validacion.
                                 if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
                                     echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
                                 elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
                                     echo EvenNumbersSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
-                                //$_POST = array(); 
                             ?>
                         </p>
                         

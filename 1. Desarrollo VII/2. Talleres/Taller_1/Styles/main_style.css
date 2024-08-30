@@ -21,6 +21,7 @@ a
     z-index: -1;
 }
 
+
 .content
 {
     position: relative;
@@ -233,6 +234,7 @@ form button
     width: 100%;
     margin: 1.5rem;
     height: 50px;
+    padding: 10px;
     background-color: rgb(107, 57, 223);
     font-size: 1.3rem;
     color: white;
@@ -246,10 +248,11 @@ form button
 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-items: center;
-    width: 80%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     padding: 5px;
     margin-bottom: 1.5rem;
     border-width: 1px;
@@ -258,13 +261,38 @@ form button
 
 .resultado p
 {
+    height: 100px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-items: center;
     margin: auto;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    vertical-align: middle;
+    overflow-y: scroll;
+    scrollbar-width: none;
     
 }
+
+.resultado2
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding: 5px;
+    margin-bottom: 1.5rem;
+}
+
 
 footer
 {
@@ -294,38 +322,30 @@ footer p
 {
     .button-frame { grid-template-columns: repeat(2, 1fr); }
     .wrapper
-    {
-        width: 300px;
-    }
+    { width: 300px; }
 
     .wrapper2
-    {
-        width: 300px;
-    }
+    { width: 300px; }
 
     .wrapperBig
-    {
-        width: 500px;
-    }
+    { width: 500px; }
+
+    .resultado { width: 200px; }
 }
 
 @media (min-width: 1200px) 
 {
     .button-frame { grid-template-columns: repeat(3, 1fr); }
     .wrapper
-    {
-        width: 350px;
-    }
+    { width: 350px; }
 
     .wrapper2
-    {
-        width: 350px;
-    }
+    { width: 350px; }
 
     .wrapperBig
-    {
-        width: 600px;
-    }
+    { width: 600px; }
+
+    .resultado { width: 250px; }
 }
 
 @media (min-width: 1600px) 

@@ -57,10 +57,57 @@ function SingleInt($string)
 
 }
 
-#endregion
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
+function SingleString($string)
+{
+
+    $filter = '/[^a-zA-Z]/';
+    $_string = preg_match($filter, $string) ? preg_replace($filter, " ", $string) : $string;
+    $_string = strtolower($_string);
+    
+    return $_string;
+
+}
+
+
+#endregion
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function DisplayForm()
+{
+
+    echo '
+    <form method="post">';
+        if(isset($_POST['submit']))
+        {
+            echo '
+            
+            <label for="continue">¿Desea Continuar? ("si"/"no")</label>
+
+            ';
+        }
+        else
+        {
+            echo '
+            
+            <label for="continue">¿Desea Iniciar? ("si"/"no")</label>
+
+            ';
+        }
+    echo '
+        <input type="text" id="continue" name="continue">
+        <button type="submit" name="submit">Enviar</button>
+    </form>
+
+    ';
+        
+
+}
 
 ?>

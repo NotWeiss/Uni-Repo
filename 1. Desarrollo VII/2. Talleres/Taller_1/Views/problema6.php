@@ -46,17 +46,17 @@
                 <div class = "paragraph">
 
                     <p>
-                        <h4>Calcular la suma de los de 1 a 1000.</h4>
+                        <h4>Calcular la suma de los cuadrados de los primeros 100 numeros naturales.</h4>
                     </p>
 
                 </div>
 
                 <div class = "wrapper2">
 
-                    <H2>Suma Secuencial [N-M]</H2>
+                    <H2>Suma secuencial de cuadrados [N-M]</H2>
 
                     <!--Formulario-->
-                    <form action = "problema2.php" method = "POST">
+                    <form action = "problema6.php" method = "POST">
 
                         <p>Ingrese el origen y el final del rango a sumar</p>
 
@@ -77,7 +77,7 @@
                                 if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
                                     echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
                                 elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
-                                    echo RangeSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
+                                    echo SquaredSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
                             ?>
                         </p>
                         

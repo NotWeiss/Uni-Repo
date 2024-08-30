@@ -64,22 +64,22 @@
                         <p>Calcular independientemente la suma de los numeros pares e impares entre N y M.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema5.php" class = "button">
                         <H3>PROBLEMA 5<br></H3>
                         <p>Imprimir los N primeros multiplos del numero X.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema6.php" class = "button">
                         <H3>PROBLEMA 6<br></H3>
                         <p>Calcular la suma de los cuadrados de los numeros entre N y M.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema7.php" class = "button">
                         <H3>PROBLEMA 7<br></H3>
                         <p>Algoritmo de Repeticion hasta cancelar la accion.</p>
                     </a>
 
-                    <a href = "" class = "button">
+                    <a href = "Views/problema8.php" class = "button">
                         <H3>PROBLEMA 8<br></H3>
                         <p>Imprimir las N primeras potencias de un numero X.</p>
                     </a>

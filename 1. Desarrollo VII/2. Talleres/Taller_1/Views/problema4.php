@@ -46,14 +46,14 @@
                 <div class = "paragraph">
 
                     <p>
-                        <h4>Calcular la suma de los primeros 10 numeros pares.</h4>
+                        <h4>Calcular la suma de los numeros pares e impares dentro entre 1 y 200.</h4>
                     </p>
 
                 </div>
 
                 <div class = "wrapperBig">
 
-                    <H2>Suma Secuencial de Pares [N-M]</H2>
+                    <H2>Suma Secuencial de Pares e Impares por separado [N-M]</H2>
 
                     <!--Formulario-->
                     <form action = "problema4.php" method = "POST">
@@ -69,19 +69,40 @@
                     </form>
                     
                     <H4>Resultados:</H4>
-                    <div class = "resultado">
-                        
-                        <p>
-                            <?php
-                                if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
-                                    echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
-                                elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
-                                    echo EvenNumbersSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
-                                //$_POST = array(); 
-                            ?>
-                        </p>
-                        
-                        
+                    
+                    <div class = "resultado2">
+
+                        <div class = "resultado">
+                            
+                            <p>
+                                <?php
+                                    // Validacion.
+                                    if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
+                                        echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
+                                    elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
+                                        echo "Pares:<br>", EvenNumbersSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
+                                ?>
+                            </p>
+                            
+                            
+
+                        </div>
+
+                        <div class = "resultado">
+                            
+                            <p>
+                                <?php
+                                    // Validacion.
+                                    if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
+                                        echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
+                                    elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
+                                        echo "Impares:<br>", OddNumbersSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
+                                ?>
+                            </p>
+                            
+                            
+
+                        </div>
 
                     </div>
 

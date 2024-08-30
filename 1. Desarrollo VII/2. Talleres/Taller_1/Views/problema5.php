@@ -46,23 +46,23 @@
                 <div class = "paragraph">
 
                     <p>
-                        <h4>Calcular la suma de los de 1 a 1000.</h4>
+                        <h4>Mostrar los N primeros multiplos de 4.</h4>
                     </p>
 
                 </div>
 
                 <div class = "wrapper2">
 
-                    <H2>Suma Secuencial [N-M]</H2>
+                    <H2>Calcular N multiplos de X</H2>
 
                     <!--Formulario-->
-                    <form action = "problema2.php" method = "POST">
+                    <form action = "problema5.php" method = "POST">
 
                         <p>Ingrese el origen y el final del rango a sumar</p>
 
-                        <input type = "text" name = "origen" placeholder = "Origen"/>
+                        <input type = "text" name = "base" placeholder = "Numero Base"/>
 
-                        <input type = "text" name = "final" placeholder = "Final"/>
+                        <input type = "text" name = "cantidad" placeholder = "Cantidad de Multiplos"/>
 
                         <button type="submit" name = "calcular">CALCULAR</button>
                         
@@ -73,11 +73,10 @@
                         
                         <p>
                             <?php
-                                // Validacion.
-                                if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
+                                if ((empty($_POST["base"]) || empty($_POST["cantidad"])) && isset($_POST["calcular"]))
                                     echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
-                                elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
-                                    echo RangeSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
+                                elseif ((isset($_POST["base"]) && isset($_POST["cantidad"])) && (isset($_POST["calcular"])))
+                                    echo Multiples(SingleInt("$_POST[base]"), SingleInt("$_POST[cantidad]"));
                             ?>
                         </p>
                         

@@ -46,42 +46,24 @@
                 <div class = "paragraph">
 
                     <p>
-                        <h4>Calcular la suma de los de 1 a 1000.</h4>
+                        <h4>Algoritmo que permita repetir continuamente la frase "¿desea continuar?".</h4>
                     </p>
 
                 </div>
 
-                <div class = "wrapper2">
+                <div class = "wrapper">
 
-                    <H2>Suma Secuencial [N-M]</H2>
-
-                    <!--Formulario-->
-                    <form action = "problema2.php" method = "POST">
-
-                        <p>Ingrese el origen y el final del rango a sumar</p>
-
-                        <input type = "text" name = "origen" placeholder = "Origen"/>
-
-                        <input type = "text" name = "final" placeholder = "Final"/>
-
-                        <button type="submit" name = "calcular">CALCULAR</button>
+                    <H2>REPETIR</H2>                        
                         
-                    </form>
-                    
-                    <H4>Resultados:</H4>
-                    <div class = "resultado">
-                        
-                        <p>
-                            <?php
-                                // Validacion.
-                                if ((empty($_POST["origen"]) || empty($_POST["final"])) && isset($_POST["calcular"]))
-                                    echo "<H4 style = 'color:Tomato;'>DATOS INCOMPLETOS</H4>";
-                                elseif ((isset($_POST["origen"]) && isset($_POST["final"])) && (isset($_POST["calcular"])))
-                                    echo RangeSum(SingleInt("$_POST[origen]"), SingleInt("$_POST[final]"));
-                            ?>
-                        </p>
-                        
-                        
+                        <?php 
+
+                                if (Repeater(SingleString($_POST['continue'])))
+                                    DisplayForm();
+                                else
+                                    DisplayForm();
+                            
+
+                        ?>
 
                     </div>
 
