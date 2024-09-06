@@ -58,56 +58,135 @@ function SingleInt($string)
 }
 
 
+#endregion
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#region Problema #7
 
-function SingleString($string)
+// Controla en que momento empieza a repetirse el programa.
+function DisplayForm()
 {
+    session_start();
+    if (isset($_POST['submit']) && (!empty($_SESSION['response'])))
+        Repeater();
 
-    $filter = '/[^a-zA-Z]/';
-    $_string = preg_match($filter, $string) ? preg_replace($filter, " ", $string) : $string;
-    $_string = strtolower($_string);
-    
-    return $_string;
-
+    else
+    {
+        BuildFormDefault();
+        $_SESSION['response'] = "yes";
+    }
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Controla las repeticiones.
+function Repeater()
+{
+
+    // Se asegura de que la respuesta guardada en _POST sea transferida a _SESSION
+    if (!empty($_POST['response']))
+        $_SESSION['response'] = $_POST['response'];
+            
+        // Si en la session, se encuentra guardada la respuesta "yes",
+        // procede a mostrar el formulario de repeticion.
+        // Si la respuesta es "No", procede con el formulario que termina la ejecución.
+        if ((isset($_SESSION['response'])) && ($_SESSION['response'] == "yes") )
+            BuildFormYes();
+
+        elseif ((isset($_SESSION['response'])) && ($_SESSION['response'] == "no") )
+        {
+
+            // Borra los datos de la sesion y la destruye.
+            session_unset();
+            session_destroy();
+
+            BuildFormNo();
+
+        }
+
+}
 
 #endregion
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-function DisplayForm()
+#region formularios
+// Formulario para respuesta positiva.
+function BuildFormYes()
 {
+    ?>
 
-    echo '
-    <form method="post">';
-        if(isset($_POST['submit']))
-        {
-            echo '
+        <form method = "POST">
+
+            <p>
+                ¿Desea Continuar?<br><br>
+            </p>
+
+            <div>
+
+                <label>
+                    
+                    Si<input class = "rb" type = "radio" name = "response" value = "yes" checked>  
+
+                </label>
+
+                <label>
+                    
+                    No<input class = "rb" type = "radio" name = "response" value = "no">
             
-            <label for="continue">¿Desea Continuar? ("si"/"no")</label>
+                </label>
 
-            ';
-        }
-        else
-        {
-            echo '
-            
-            <label for="continue">¿Desea Iniciar? ("si"/"no")</label>
+            </div>
 
-            ';
-        }
-    echo '
-        <input type="text" id="continue" name="continue">
-        <button type="submit" name="submit">Enviar</button>
-    </form>
+            <button type="submit" name="submit">SIGUIENTE</button>
+        </form>
 
-    ';
-        
+    <?php
+}
+
+
+// Formulario para respuesta negativa.
+function BuildFormNo()
+{
+    ?>
+
+        <form method = "POST">
+
+            <p>
+                PROGRAMA TERMINADO
+            </p>
+
+            <button type="submit" name="submit">REINICIAR</button>
+        </form>
+
+    <?php
+}
+
+
+// Formulario default.
+function BuildFormDefault()
+{
+    ?>
+
+        <form method = "POST">
+
+            <p>
+                Programa que se repite
+            </p>
+
+            <button type="submit" name="submit">INICIAR</button>
+        </form>
+
+    <?php
+
 
 }
+
+#endregion
+
 
 ?>

@@ -1,0 +1,7 @@
+SWITCH:
+    COLORS:
+        - turquoise -> (#50BF97), RGB(80, 191, 151)
+        - light_blue -> (#41AEF2), RGB(65, 174, 242)
+        - yellow -> (#F2C849), RGB(242, 200, 73)
+
+    

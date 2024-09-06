@@ -55,15 +55,7 @@
 
                     <H2>REPETIR</H2>                        
                         
-                        <?php 
-
-                                if (Repeater(SingleString($_POST['continue'])))
-                                    DisplayForm();
-                                else
-                                    DisplayForm();
-                            
-
-                        ?>
+                        <?php DisplayForm();?>
 
                     </div>
 

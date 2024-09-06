@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
+                "file": "6. Extra/Formatting Cheat Sheet.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "98bdababeef74fbd",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "3. Talleres/Taller_2/Arquitectura.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "3. Talleres/Taller_2/Arquitectura.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "3. Talleres/Taller_2/Arquitectura.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "3. Talleres/Taller_2/Arquitectura.md"
               }
             }
           },
@@ -142,7 +153,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 205.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -152,19 +164,22 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ad3fed0c00bca2c9",
+  "active": "98bdababeef74fbd",
   "lastOpenFiles": [
-    "6. Extra/EXCEL.md",
-    "Untitled.md",
-    "1. Clases/Clase 1.md",
-    "4. Laboratorios/Laboratorio 1.md",
-    "Demencia de Ian.md",
-    "2. Practicas/Practica 1.md",
     "6. Extra/Formatting Cheat Sheet.md",
+    "3. Talleres/Taller_2/Arquitectura.md",
+    "3. Talleres/Taller_2",
+    "1. Clases/Clase 1.md",
+    "2. Practicas/Practica 1.md",
+    "4. Laboratorios/Laboratorio 1.md",
     "6. Extra/Presentacion.md",
+    "Untitled.md",
+    "6. Extra/EXCEL.md",
+    "Demencia de Ian.md",
     "6. Extra/ModsMinecraft.md",
     "2. Practicas/Attachments/Calculadora SimplePot-1.png",
     "2. Practicas/Attachments/Calculadora SimpleMod-1.png",
@@ -184,7 +199,6 @@
     "New folder",
     "5. Parciales",
     "4. Laboratorios",
-    "3. Talleres",
-    "1. Clases"
+    "3. Talleres"
   ]
 }

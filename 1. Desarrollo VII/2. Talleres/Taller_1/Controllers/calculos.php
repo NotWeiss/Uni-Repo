@@ -103,33 +103,6 @@ function PowerOf($base, $amount)
 
 }
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function Repeater($answer)
-{
-
-    $_answer = $answer;
-
-    if ($_answer == "no")
-    {
-        echo "Proceso Detenido.";
-        return false;
-    }
-    elseif ($_answer == "si")
-    {
-        echo "El Proceso Continuara.";
-        return true;
-    }
-    else    
-        echo "Respuesta fuera de rango.";
-    
-    return true;
-    
-
-}
-
-
 #endregion
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
