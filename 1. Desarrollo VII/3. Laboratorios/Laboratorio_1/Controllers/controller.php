@@ -7,7 +7,9 @@ function CalcularDiametro($input)
     $area = $pi * ($radio ** 2) ;
     $perimetro = 2 * $pi * $radio;
 
-    //return 
+    $resultado = "Area: $area<br>Perimetro: $perimetro"
+
+    echo $resultado;
 }
 
 function ConvertirPulgada($input)
@@ -15,7 +17,7 @@ function ConvertirPulgada($input)
     $pulgada = $input;
     $centimetro = $pulgada * 2.54;
 
-    //return 
+    echo $centimetro;
 }
 
 ?>
