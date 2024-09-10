@@ -11,9 +11,11 @@
             "id": "03aa9cee03486d9c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md"
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -157,10 +159,11 @@
   },
   "active": "03aa9cee03486d9c",
   "lastOpenFiles": [
-    "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
-    "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
-    "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
     "Pasted Image 20240909200730_259.png",
+    "Untitled.md",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
     "3. Talleres/Taller_2/Planificacion/Layers Diagram.png",
     "3. Talleres/Taller_2/Planificacion/Untitled.canvas",
     "6. Extra/Formatting Cheat Sheet.md",
@@ -170,7 +173,6 @@
     "2. Practicas/Practica 1.md",
     "4. Laboratorios/Laboratorio 1.md",
     "6. Extra/Presentacion.md",
-    "Untitled.md",
     "6. Extra/EXCEL.md",
     "Demencia de Ian.md",
     "6. Extra/ModsMinecraft.md",
