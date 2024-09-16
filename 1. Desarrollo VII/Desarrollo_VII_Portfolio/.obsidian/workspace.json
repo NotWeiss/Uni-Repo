@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "6. Extra/Formatting Cheat Sheet.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "14254ac1f6ce8a45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "Untitled 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "Untitled 1.md"
               }
             }
           },
@@ -157,22 +170,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "03aa9cee03486d9c",
+  "active": "14254ac1f6ce8a45",
   "lastOpenFiles": [
-    "Pasted Image 20240909200730_259.png",
+    "6. Extra/Formatting Cheat Sheet.md",
+    "Untitled 1.md",
+    "6. Extra/Presentacion.md",
     "Untitled.md",
+    "Pasted Image 20240909200730_259.png",
     "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
     "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
     "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
     "3. Talleres/Taller_2/Planificacion/Layers Diagram.png",
     "3. Talleres/Taller_2/Planificacion/Untitled.canvas",
-    "6. Extra/Formatting Cheat Sheet.md",
     "3. Talleres/Taller_2/Planificacion",
     "3. Talleres/Taller_2",
     "1. Clases/Clase 1.md",
     "2. Practicas/Practica 1.md",
     "4. Laboratorios/Laboratorio 1.md",
-    "6. Extra/Presentacion.md",
     "6. Extra/EXCEL.md",
     "Demencia de Ian.md",
     "6. Extra/ModsMinecraft.md",

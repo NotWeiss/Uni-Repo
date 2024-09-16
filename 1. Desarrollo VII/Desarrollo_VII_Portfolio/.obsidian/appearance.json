@@ -1,8 +1,9 @@
 {
   "cssTheme": "AnuPpuccin",
-  "baseFontSize": 16,
+  "baseFontSize": 12,
   "enabledCssSnippets": [
     "Align-Images",
-    "S - Images Adjustments"
+    "S - Images Adjustments",
+    "Text Formatting"
   ]
 }
