@@ -13,6 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "6. Extra/Formatting Cheat Sheet.md",
                 "mode": "preview",
                 "source": true
@@ -26,8 +27,17 @@
               "type": "markdown",
               "state": {
                 "file": "Untitled 1.md",
+=======
+<<<<<<< HEAD
+                "file": "6. Extra/Formatting Cheat Sheet.md",
+                "mode": "preview",
+                "source": true
+=======
+                "file": "Untitled.md",
+>>>>>>> 08b6b23563f4842f12b7316b906472c8fa7ca7aa
                 "mode": "source",
                 "source": false
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
               }
             }
           }
@@ -98,7 +108,15 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "Untitled 1.md",
+=======
+<<<<<<< HEAD
+                "file": "6. Extra/Formatting Cheat Sheet.md",
+=======
+                "file": "Untitled.md",
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
+>>>>>>> 08b6b23563f4842f12b7316b906472c8fa7ca7aa
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +133,15 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "Untitled 1.md",
+=======
+<<<<<<< HEAD
+                "file": "6. Extra/Formatting Cheat Sheet.md",
+=======
+                "file": "Untitled.md",
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
+>>>>>>> 08b6b23563f4842f12b7316b906472c8fa7ca7aa
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +164,15 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "Untitled 1.md"
+=======
+<<<<<<< HEAD
+                "file": "6. Extra/Formatting Cheat Sheet.md"
+=======
+                "file": "Untitled.md"
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
+>>>>>>> 08b6b23563f4842f12b7316b906472c8fa7ca7aa
               }
             }
           },
@@ -172,9 +206,22 @@
   },
   "active": "14254ac1f6ce8a45",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "6. Extra/Formatting Cheat Sheet.md",
     "Untitled 1.md",
     "6. Extra/Presentacion.md",
+=======
+<<<<<<< HEAD
+    "6. Extra/Presentacion.md",
+    "Untitled.md",
+    "6. Extra/Formatting Cheat Sheet.md",
+    "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
+=======
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
+    "Pasted Image 20240909200730_259.png",
+>>>>>>> 08b6b23563f4842f12b7316b906472c8fa7ca7aa
     "Untitled.md",
     "Pasted Image 20240909200730_259.png",
     "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
@@ -187,6 +234,13 @@
     "1. Clases/Clase 1.md",
     "2. Practicas/Practica 1.md",
     "4. Laboratorios/Laboratorio 1.md",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "6. Extra/Presentacion.md",
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
+>>>>>>> 08b6b23563f4842f12b7316b906472c8fa7ca7aa
     "6. Extra/EXCEL.md",
     "Demencia de Ian.md",
     "6. Extra/ModsMinecraft.md",
