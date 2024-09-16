@@ -32,6 +32,7 @@ Este proyecto esta cimentado en la Investigación #1 de Desarrollo de Software V
 
 ## Coordinadores
 
+<<<<<<< HEAD
 | GRUPO |          COORDINADOR          |                     TEMA A DESARROLLAR                      |
 |:-----:|:-----------------------------:|:-----------------------------------------------------------:|
 |   A   |    Jose Ibarra (Joseim21)     |          **ACCESO A BASES DE DATOS** y TabControl.          |
@@ -42,6 +43,19 @@ Este proyecto esta cimentado en la Investigación #1 de Desarrollo de Software V
 |   F   |      Fernando Toribio ()      |  **APLICACIONES EN CAPAS USANDO COMPONENTES** y ToolStrip.  |
 |   G   |  Reynaldo Pedroza (NotWeiss)  | **APLICACIONES EN CAPAS USANDO COMPONENTES** y Animaciones. |
 |   H   |    Noely Pinzon (tkyo211)     |                **APLICACIONES WEB CON ASP**                 |
+=======
+| GRUPO |         COORDINADOR         |                              TEMA A DESARROLLAR                              |
+|:-----:|:---------------------------:|:----------------------------------------------------------------------------:|
+|   A   |   Jose Ibarra (Joseim21)    |                  **ACCESO A BASES DE DATOS** y TabControl.                   |
+|   B   |              -              |           **ACCESO A BASES DE DATOS** y Manejo de Formularios SDI.           |
+|   C   |              -              |           **ACCESO A BASES DE DATOS** y Manejo de Formularios MDI.           |
+|   D   |              -              |                   **ACCESO A BASES DE DATOS** y ListView.                    |
+|   E   |              -              |               **ACCESO A BASES DE DATOS** y Cajas de Diálogo.                |
+|   F   |     Fernando Toribio ()     |          **APLICACIONES EN CAPAS USANDO COMPONENTES** y ToolStrip.           |
+|   G   | Reynaldo Pedroza (NotWeiss) |         **APLICACIONES EN CAPAS USANDO COMPONENTES** y Animaciones.          |
+|   H   |       Cesar Flores ()       |         **APLICACIONES WEB CON ASP**, Manejo de Fechas y Calendarios         |
+|   I   |   Noely Pinzon (tkyo211)    | **APLICACIONES WEB CON ASP**, Formatos de la Clase Date y sus Distintos Usos |
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
 
 ---
 

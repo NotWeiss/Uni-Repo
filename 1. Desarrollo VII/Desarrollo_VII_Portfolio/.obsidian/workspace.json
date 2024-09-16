@@ -13,9 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "6. Extra/Formatting Cheat Sheet.md",
                 "mode": "preview",
                 "source": true
+=======
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
               }
             }
           }
@@ -85,7 +91,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "6. Extra/Formatting Cheat Sheet.md",
+=======
+                "file": "Untitled.md",
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "6. Extra/Formatting Cheat Sheet.md",
+=======
+                "file": "Untitled.md",
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "6. Extra/Formatting Cheat Sheet.md"
+=======
+                "file": "Untitled.md"
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
               }
             }
           },
@@ -159,13 +177,20 @@
   },
   "active": "03aa9cee03486d9c",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "6. Extra/Presentacion.md",
     "Untitled.md",
     "6. Extra/Formatting Cheat Sheet.md",
     "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
     "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
     "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
+=======
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
     "Pasted Image 20240909200730_259.png",
+    "Untitled.md",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
     "3. Talleres/Taller_2/Planificacion/Layers Diagram.png",
     "3. Talleres/Taller_2/Planificacion/Untitled.canvas",
     "3. Talleres/Taller_2/Planificacion",
@@ -173,6 +198,10 @@
     "1. Clases/Clase 1.md",
     "2. Practicas/Practica 1.md",
     "4. Laboratorios/Laboratorio 1.md",
+<<<<<<< HEAD
+=======
+    "6. Extra/Presentacion.md",
+>>>>>>> 56dc8ab7f9b2ea5370e422c04579be7fd01d288d
     "6. Extra/EXCEL.md",
     "Demencia de Ian.md",
     "6. Extra/ModsMinecraft.md",
