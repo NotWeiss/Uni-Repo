@@ -4,7 +4,7 @@
 * Arrays by columns:
 * Column #1: Category.
 * Column #2: Bonus.
-* Column #3: 
+* Column #3: Discount.
 */
 $category = [1, 2, 3, 4];
 $bonus = ["15%", "13%", "12%", "9.5%"];

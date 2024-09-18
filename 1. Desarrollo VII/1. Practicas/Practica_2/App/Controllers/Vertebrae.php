@@ -2,9 +2,14 @@
 
 namespace App\Controllers;
 
-class Vertebrae
+use Core\Controller;
+
+class Vertebrae extends Controller
 {
+    static $content = null;
+
     
+
 }
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Data;
+namespace Core;
 
 /*
 *
@@ -14,12 +14,10 @@ class Reaver
     *   - Hospital
     *   - Company
     */
-    function getData(string $location)
+    public static function getData(string $location): array
     {
-        include_once("./dump/$location.php");
-
+        include_once("../data/dump/$location.php");
         return $result;
-
     }
 
 }

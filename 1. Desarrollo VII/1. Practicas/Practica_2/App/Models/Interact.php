@@ -18,23 +18,25 @@ class Interact extends Model
 {
 
     // Picks the best method depending on the array's content.
-    public function sortData(array $data, string $key, float $currency)
+    public static function sortData(array $data, string $key, 
+                             float $currency): string
     {
 
         (int) $flag = count(array_filter($data, 'is_array'));
         (string) $result = null;
 
-        $result = ($flag > 0) ? $this->solveMatrix($data, $key, $currency) : 
+        $result = ($flag > 0) ? $this->solveMatrix($data, $key, $currency) :
                                 $this->solvePairs($data, $key, $currency);
 
         return $result;
     }
 
 
-///////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
     // Looks for matching data in an associative array.
-    private function solvePairs(array $source, string $filter, float $money)
+    private function solvePairs(array $source, string $filter, 
+                                float $money): string
     {
 
         (int) $pair = intval($this->cleanse($source[$filter]));
@@ -44,15 +46,18 @@ class Interact extends Model
 
     }
     
-///////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
-    // Looks for matching data in a Bi-Dimensional array.
-    private function solveMatrix(array $source, string $filter, float $money)
+    /* 
+    * Looks for matching data in a Bi-Dimensional array.
+    * Stores Bonuses and Discount in an array.
+    */
+    private function solveMatrix(array $source, string $filter, 
+                                 float $money): string
     {
 
         $multipliers = [];
         (string) $message = "";
-        (float) $operator = null;
         (float) $budget = $money;
         (int) $key = array_search($filter, $source[0]);
 
@@ -68,15 +73,7 @@ class Interact extends Model
             }
         }
         
-        foreach($multipliers as $modifier)
-        {
-            $operator = floatval($this->cleanse($modifier));
-
-            if ($operator < 0) 
-                $budget -= $budget * (abs($operator) * 0.01);
-            elseif ($operator > 0)
-                $budget += $budget * (abs($operator) * 0.01);
-        }
+        $budget = $this->alterPayment($multipliers, $budget);
 
         return "$money|$filter|$message|$budget";
 
