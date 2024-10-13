@@ -11,13 +11,26 @@
             "id": "3aaf007465ac36c8",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "image",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md"
+                "file": "3. Talleres/Taller_2/Planificacion/Entity Relationship Diagram.png"
+              }
+            }
+          },
+          {
+            "id": "9b699c58ff4ce3f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6. Extra/Presentacion.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+                "file": "6. Extra/Presentacion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
+                "file": "6. Extra/Presentacion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Talleres/Taller_2/Planificacion/MVC Diagram.md"
+                "file": "6. Extra/Presentacion.md"
               }
             }
           }
@@ -146,9 +159,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1ef1a232b643c94f",
+  "active": "9b699c58ff4ce3f7",
   "lastOpenFiles": [
+    "3. Talleres/Taller_2/Desarrollo/SQL.md",
+    "3. Talleres/Taller_2/Planificacion/Entity Relationship Diagram.png",
+    "3. Talleres/Taller_2/Desarrollo",
+    "Untitled",
     "3. Talleres/Taller_2/Planificacion/Layers Diagram.md",
+    "3. Talleres/Taller_2/Planificacion/Layers Diagram.png",
+    "3. Talleres/Taller_2/Planificacion/MVC Diagram.png",
+    "1. Clases/Clase 1.md",
+    "Pasted Image 20240909200730_259.png",
+    "3. Talleres/Taller_2/Planificacion/Data Base Diagram.png",
     "3. Talleres/Taller_2/Planificacion/MVC Diagram.md",
     "6. Extra/Formatting Cheat Sheet.md"
   ]
