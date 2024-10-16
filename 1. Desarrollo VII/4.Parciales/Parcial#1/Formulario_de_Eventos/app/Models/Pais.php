@@ -15,5 +15,13 @@ class Pais extends Model
 
     protected $fillable = ['nombre', 'demonimo'];
 
-    
+    public function inscriptoresNacionalidad()
+    {
+        return $this->hasMany(Inscriptor::class, 'nacionalidad', 'pais_id');
+    }
+
+    public function inscriptoresResidencia()
+    {
+        return $this->hasMany(Inscriptor::class, 'residencia', 'pais_id');
+    }
 }

@@ -14,25 +14,31 @@ class Inscriptor extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'nombre', 'apellido', 'edad', 'sexo', 'residencia',
-        'nacionalidad', 'telefono', 'correo', 'tema'];
+        'nombre', 
+        'apellido', 
+        'edad', 
+        'sexo', 
+        'residencia',        // Ensure this is the foreign key id
+        'nacionalidad',      // Ensure this is the foreign key id
+        'telefono', 
+        'correo'
+    ];
 
-
-    // Relacion con la tabla Pais
-    public function residencia()
+    // Relationship with the Pais table for residencia
+    public function paisResidencia()
     {
-        return $this->belongsTo(Pais::class, 'residencia', 'pais_id');
+        return $this->belongsTo(Pais::class, 'residencia');
     }
 
-    // Relacion con la tabla Pais
-    public function nacionalidad()
+    // Relationship with the Pais table for nacionalidad
+    public function paisNacion()
     {
-        return $this->belongsTo(Pais::class, 'nacionalidad', 'pais_id');
+        return $this->belongsTo(Pais::class, 'nacionalidad');
     }
 
-    // Relacion con la tabla de areas de interes
+    // Relationship with the Area table for areas of interest
     public function area()
     {
-        return $this->belongsTo(Area::class, 'tema', 'area_id');
+        return $this->belongsToMany(Area::class, 'interes', 'inscriptor_id', 'area_id');
     }
 }

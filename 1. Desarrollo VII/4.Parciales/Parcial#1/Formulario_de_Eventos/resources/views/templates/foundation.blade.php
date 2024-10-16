@@ -23,13 +23,19 @@
 </head>
 <body>
 
-    @yield('content')
+    <div class="background"></div>
 
-    <footer>
+    <div class="content">
 
-        <p>© {{ now()->format('Y') }} e-Polls. All rights reserved.</p>
+        @yield('content')
+
+        <footer>
+
+            <p>© {{ now()->format('Y') }} e-Polls. All rights reserved.</p>
+            
+        </footer>
         
-    </footer>
+    </div>
 
 </body>
 

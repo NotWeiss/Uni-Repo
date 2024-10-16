@@ -10,8 +10,13 @@ class Area extends Model
     use HasFactory;
 
     protected $table = 'datos_de_area';
-    protected $primaryKey = 'pais_id';
+    protected $primaryKey = 'area_id';
     public $timestamps = false;
 
     protected $fillable = ['opcion'];
+
+    public function inscriptores()
+    {
+        return $this->belongsToMany(Inscriptor::class, 'interes', 'area_id', 'inscriptor_id');
+    }
 }

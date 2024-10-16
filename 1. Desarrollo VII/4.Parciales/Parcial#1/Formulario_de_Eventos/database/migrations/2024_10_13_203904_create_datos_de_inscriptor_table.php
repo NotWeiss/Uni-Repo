@@ -25,8 +25,8 @@ return new class extends Migration
             $table->foreign('nacionalidad')->references('pais_id')->on('datos_de_pais');
             $table->string('telefono');
             $table->string('correo');
-            $table->unsignedInteger('tema');
-            $table->foreign('tema')->references('area_id')->on('datos_de_area_de_interes');
+            //$table->unsignedInteger('tema');
+            //$table->foreign('tema')->references('area_id')->on('datos_de_area_de_interes');
         });
 
         Schema::enableForeignKeyConstraints();

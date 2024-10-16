@@ -29,16 +29,20 @@ class FormController extends Controller
             'apellido' => 'required',
             'edad' => 'required|integer|gt:8', 
             'sexo' => 'required', 
-            'residencia' => 'required',
-            'nacionalidad' => 'required', 
+            'residencia' => 'required|exists:datos_de_pais,pais_id',
+            'nacionalidad' => 'required|exists:datos_de_pais,pais_id', 
             'telefono' => 'required', 
             'correo' => 'required|email', 
-            'tema' => 'required'], 
+            'tema' => 'required|array'], 
             $this->mensajes());
 
-        Inscriptor::create($data);
+        $data['nombre'] = ucfirst(strtolower($data['nombre']));
+        $data['apellido'] = ucfirst(strtolower($data['apellido']));
 
-        return $this->formulario();
+        $inscriptor = Inscriptor::create($data);
+        $inscriptor->area()->attach($data['tema']);
+
+        return redirect()->route('formulario');
     }
 
     public function mensajes()

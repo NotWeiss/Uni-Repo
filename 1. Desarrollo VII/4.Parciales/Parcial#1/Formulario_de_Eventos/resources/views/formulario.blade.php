@@ -2,160 +2,174 @@
 
 @section('content')
 
-<div class="background"></div>
+<div class="links">
 
-<div class="content">
+    <a href="{{ route('formulario') }}"><h1>e-Polls</h1></a>
 
-    <div>
+    <a href="{{ route('dashboard') }}">REGISTROS</a>
 
-        <form action="" method="POST">
+</div>
 
-            @csrf
+<div>
 
-            <!-- NOMBRE -->
-            <div>
+    <form action="{{ route('respuesta') }}" class="pico" method="POST">
 
-                <label for="nombre">Ingrese su nombre</label>
-                <input 
-                    type="text"
-                    name="nombre"
-                    placeholder="Lionel">
+        @csrf
 
-            </div>
-            
+        <!-- NOMBRE -->
+        <div class="container">
 
-            <!-- APELLIDO -->
-            <div>
+            <label for="nombre">Ingrese su nombre</label>
+            <br>
+            <input type="text" name="nombre" placeholder="Lionel" value="{{ old('nombre') }}">
 
-                <label for="apellido">Ingrese su apellido</label>
-                <input 
-                    type="text"
-                    name="apellido"
-                    placeholder="Messi">
+            @error('nombre')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-            </div>
+        </div>
 
+        <!-- APELLIDO -->
+        <div class="container">
 
-            <!-- EDAD -->
-            <div>
+            <label for="apellido">Ingrese su apellido</label>
+            <br>
+            <input type="text" name="apellido" placeholder="Messi" value="{{ old('apellido') }}">
 
-                <label for="edad">Ingrese su edad</label>
-                <input 
-                    type="text"
-                    name="edad"
-                    placeholder="20">
+            @error('apellido')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-            </div>
+        </div>
 
+        <!-- EDAD -->
+        <div class="container">
 
-            <!-- SEXO -->
-            <div>
+            <label for="edad">Ingrese su edad</label>
+            <br>
+            <input type="text" name="edad" placeholder="20" value="{{ old('edad') }}">
+
+            @error('edad')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
+
+        </div>
+
+        <!-- SEXO -->
+        <div class="container2">
+
+            <div class="row-h"><p>Seleccione su Sexo</p></div>
+
+            <div class="row-b">
 
                 <label for="masculino">Masculino</label>
-                <input 
-                    type="radio"
-                    id="masculino"
-                    name="sexo"
-                    value="M">
+                <input type="radio" id="masculino" name="sexo" value="M" {{ old('sexo') == 'M' ? 'checked' : '' }}>
 
                 <label for="femenino">Femenino</label>
-                <input 
-                    type="radio"
-                    id="femenino"
-                    name="sexo"
-                    value="F">
+                <input type="radio" id="femenino" name="sexo" value="F" {{ old('sexo') == 'F' ? 'checked' : '' }}>
 
             </div>
 
+            @error('sexo')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-            <!-- RESIDENCIA -->
-            <div>
+        </div>
 
-                <label for="residencia">Seleccione su País de Residencia</label>
-                <select name="residencia">
+        <!-- RESIDENCIA -->
+        <div class="container">
 
-                    @foreach ($paises as $pais)
+            <label for="residencia">Seleccione su País de Residencia</label>
+            <br>
+            <select name="residencia">
 
-                        <option value="{{ $pais->pais_id }}">
-                            {{ $pais->nombre }}
-                        </option>
+                @foreach ($paises as $pais)
+                    <option value="{{ $pais->pais_id }}" {{ old('residencia') == $pais->pais_id ? 'selected' : '' }}>
+                        {{ $pais->nombre }}
+                    </option>
+                @endforeach
 
-                    @endforeach
+            </select>
 
-                </select>
+            @error('residencia')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-            </div>
-        
+        </div>
 
-            <!-- NACIONALIDAD -->
-            <div>
+        <!-- NACIONALIDAD -->
+        <div class="container">
 
-                <label for="nacionalidad">Seleccione su Nacionalidad</label>
-                <select name="nacionalidad">
+            <label for="nacionalidad">Seleccione su Nacionalidad</label>
+            <br>
+            <select name="nacionalidad">
 
-                    @foreach ($paises as $pais)
+                @foreach ($paises as $pais)
+                    <option value="{{ $pais->pais_id }}" {{ old('nacionalidad') == $pais->pais_id ? 'selected' : '' }}>
+                        {{ $pais->demonimo }}
+                    </option>
+                @endforeach
 
-                        <option value="{{ $pais->pais_id }}">
-                            {{ $pais->demonimo }}
-                        </option>
+            </select>
 
-                    @endforeach
+            @error('nacionalidad')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-                </select>
+        </div>
 
-            </div>
+        <!-- TELEFONO -->
+        <div class="container">
 
+            <label for="telefono">Ingrese su Numero de Teléfono</label>
+            <br>
+            <input type="text" name="telefono" placeholder="00000000" value="{{ old('telefono') }}">
 
-            <!-- TELEFONO -->
-            <div>
+            @error('telefono')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-                <label for="telefono">Ingrese su Numero de Teléfono</label>
-                <input 
-                    type="text"
-                    name="telefono"
-                    placeholder="00000000">
+        </div>
 
-            </div>
+        <!-- CORREO -->
+        <div class="container">
 
+            <label for="correo">Ingrese su Correo Electrónico</label>
+            <br>
+            <input type="text" name="correo" placeholder="micorreo@correo.com" value="{{ old('correo') }}">
 
-            <!-- CORREO -->
-            <div>
+            @error('correo')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
 
-                <label for="correo">Ingrese su Correo Electrónico</label>
-                <input 
-                    type="text"
-                    name="correo"
-                    placeholder="micorreo@correo.com">
+        </div>
 
-            </div>
-            
+        <!-- AREA DE INTERES -->
+        <div class="container2">
 
-            <!-- AREA DE INTERES -->
-            <div>
+            <div class="row-h"><p>Seleccione las Areas que le resulten interesantes</p></div>
 
-                <p>
-                    Seleccione las Areas que le resulten interesantes
-                </p>
+            <div class="row-b">
 
                 @foreach ($opciones as $opcion)
 
-                    <label for="opcion{{ $opcion->area_id }}">
-                        {{ $opcion->opcion }}
-                    </label>
-
-                    <input 
-                        type="checkbox"
-                        id="opcion{{ $opcion->area_id }}"
-                        name="tema[]">
+                    <label for="opcion{{ $opcion->area_id }}">{{ $opcion->opcion }}</label>
+                    <input type="checkbox" id="opcion{{ $opcion->area_id }}" name="tema[]" value="{{ $opcion->area_id }}" {{ in_array($opcion->area_id, old('tema', [])) ? 'checked' : '' }}>
 
                 @endforeach
 
             </div>
-    
-        </form>
 
-    </div>
+            @error('tema')
+                <div class="alerta">{{ $message }}</div>
+            @enderror
+
+        </div>
+
+        <input type="submit" class="button" value="REGISTRARSE">
+
+    </form>
 
 </div>
-    
+
 @endsection
