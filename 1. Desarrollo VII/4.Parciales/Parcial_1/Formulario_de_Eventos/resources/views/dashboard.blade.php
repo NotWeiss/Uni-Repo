@@ -10,8 +10,7 @@
 
 </div>
 
-@if (!empty($inscritos))
-    
+@if ($inscritos->isNotEmpty())
     <div class="table">
 
         <table>
@@ -70,7 +69,7 @@
 
 @else    
 
-    <div>
+    <div style="color: rgba(21,21,21,1);">
 
         <p>No hay nadie inscrito en este evento.</p>
 

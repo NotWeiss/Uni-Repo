@@ -9,7 +9,7 @@ use App\Models\Inscriptor;
 
 class FormController extends Controller
 {
-    //
+    // Carga la informacion del formulario
     public function formulario()
     {
         $paises = Pais::all();
